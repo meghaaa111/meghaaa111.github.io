@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megha S B — Portfolio</title>
+    <meta name="description" content="Editorial Portfolio of Megha S B, Data Scientist and AI Engineer.">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css?v=8">
+</head>
+<body>
+    <div id="loading-screen"></div>
+
+    <div class="custom-cursor"></div>
+
+    <!-- 1. HERO -->
+    <section class="hero" id="home">
+        <!-- Parallax Container -->
+        <div class="hero-parallax-wrapper" style="width:100%; height:100%; position:absolute; top:0; left:0; pointer-events:none; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+            <div class="hero-nav-wrapper anim-el" style="pointer-events:auto;">
+                <nav class="hero-nav">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <button class="hamburger-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Mobile Overlay Menu -->
+            <div class="mobile-overlay-menu">
+                <button class="close-menu-btn" aria-label="Close Menu">&times;</button>
+                <nav class="mobile-overlay-links">
+                    <a href="#about" class="mobile-nav-link">ABOUT</a>
+                    <a href="#projects" class="mobile-nav-link">PROJECTS</a>
+                    <a href="#skills" class="mobile-nav-link">SKILLS</a>
+                    <a href="#contact" class="mobile-nav-link">CONTACT</a>
+                </nav>
+            </div>
+
+            <div class="hero-code-icon anim-el" style="transition-delay: 0.1s;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+
+            <div class="hero-content dual-layout">
+                <div class="hero-text-col">
+                    <div class="sparkle-icon s3">✦</div>
+                    <div class="sparkle-icon s4">✦</div>
+                    <div class="sparkle-icon s6">✦</div>
+                    <div class="sparkle-icon s7">✦</div>
+                    <div class="hero-whisper">hello,</div>
+                    <div class="hero-name-wrapper">
+                        <div class="sparkle-icon s1">✦</div>
+                        <h1 class="hero-name">
+                            <span class="hero-letter">M</span>
+                            <span class="hero-letter">E</span>
+                            <span class="hero-letter">G</span>
+                            <span class="hero-letter">H</span>
+                            <span class="hero-letter">A</span>
+                            <span class="hero-letter" style="width:0.3em;">&nbsp;</span>
+                            <span class="hero-letter">S</span>
+                            <span class="hero-letter" style="width:0.3em;">&nbsp;</span>
+                            <span class="hero-letter">B</span>
+                        </h1>
+                        <div class="sparkle-icon s2">✦</div>
+                    </div>
+                    <h2 class="hero-role">Data Scientist &nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;&nbsp; ML Architect &nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;&nbsp; Code Alchemist</h2>
+                    <div class="sparkle-icon s5">✦</div>
+                    <div class="sparkle-icon s8">✦</div>
+                </div>
+                <div class="hero-photo-col">
+                    <div class="hero-photo-arch">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="meg.jpeg">
+                            <img src="megh.jpeg" alt="Megha S B" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT -->
+    <section class="about bg-dark" id="about">
+        <div class="container">
+            <h2 class="section-title wipe"><span class="wipe-reveal-target"><span class="wipe-reveal-text">ABOUT</span></span></h2>
+            
+            <div class="about-grid">
+                <!-- Terminal Window -->
+                <div class="terminal-card anim-el">
+                    <div class="terminal-header">
+                        <div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div>
+                    </div>
+                    <div class="terminal-content" id="terminal-content">
+                        <!-- Filled by JS Typewriter -->
+                    </div>
+                </div>
+
+                <!-- Text Right -->
+                <div class="about-text anim-el" style="transition-delay: 0.2s;">
+                    <span class="section-subtitle">crafted with precision</span>
+                    <p class="about-bio">
+                        I am a second-year B.Tech AIML student deeply passionate about data science, artificial
+                        intelligence, and building intelligent solutions. I thrive in the intersection of mathematical rigor
+                        and engineering craftsmanship.
+                    </p>
+                    <div class="about-stats">
+                        <span class="tech-pill">9.13 CGPA</span>
+                        <span class="tech-pill">Dept. 2nd Rank</span>
+                        <span class="tech-pill">150+ Problems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Diagonal Cut to Expertise -->
+    </section>
+    
+    <!-- 3. EXPERTISE -->
+    <div class="diagonal-divider-top bg-light">
+        <section class="expertise" id="expertise">
+            <div class="container">
+                <h2 class="section-title wipe"><span class="wipe-reveal-target"><span class="wipe-reveal-text">EXPERTISE</span></span></h2>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-card anim-el" style="transition-delay:0s;">
+                        <div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                        <h3 class="exp-card-title">Machine Learning</h3>
+                        <p class="exp-card-desc">Architecting predictive models and classification systems with mathematical precision.</p>
+                    </div>
+                    <div class="expertise-card anim-el" style="transition-delay:0.1s;">
+                        <div class="exp-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+                        <h3 class="exp-card-title">Deep Learning & NLP</h3>
+                        <p class="exp-card-desc">Extracting contextual meaning from language and complex data patterns via neural networks.</p>
+                    </div>
+                    <div class="expertise-card anim-el" style="transition-delay:0.2s;">
+                        <div class="exp-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+                        <h3 class="exp-card-title">Data Engineering</h3>
+                        <p class="exp-card-desc">Transforming raw pipelines and deploying resilient analytical models.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 4. PROJECTS -->
+    <section class="projects bg-deep" id="projects">
+        <div class="container">
+            <h2 class="section-title wipe"><span class="wipe-reveal-target"><span class="wipe-reveal-text">PROJECTS</span></span></h2>
+
+            <!-- Project 1 -->
+            <div class="project-card slide-left">
+                <div class="gold-line"></div>
+                <div class="project-visual art-v2c">
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(50, 50)">
+                            <rect class="bar b1" x="-30" y="-15" width="8" height="30" rx="4"/>
+                            <rect class="bar b2" x="-15" y="-30" width="8" height="60" rx="4"/>
+                            <rect class="bar b3" x="0" y="-45" width="8" height="90" rx="4"/>
+                            <rect class="bar b4" x="15" y="-30" width="8" height="60" rx="4"/>
+                            <rect class="bar b5" x="30" y="-15" width="8" height="30" rx="4"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tech-pill">Python</span><span class="tech-pill">Voice AI</span><span class="tech-pill">Web</span>
+                    </div>
+                    <h3 class="project-title">V2C — Voice to Code</h3>
+                    <p class="project-desc">Voice-driven AI coding assistant converting natural language to executable code. Context-aware and accessibility-first.</p>
+                    <p class="project-metric" style="font-size: clamp(1.2rem, 3vw, 1.8rem);">Multi-Linguistic</p>
+                    <a href="https://github.com/meghaaa111/V2C" target="_blank" rel="noopener noreferrer" class="view-link">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card slide-right">
+                <div class="gold-line"></div>
+                <div class="project-visual art-fraud">
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                        <line x1="20" y1="50" x2="50" y2="30"/><line x1="20" y1="50" x2="50" y2="70"/>
+                        <line x1="50" y1="30" x2="80" y2="50"/><line x1="50" y1="70" x2="80" y2="50"/>
+                        <circle cx="20" cy="50" r="4"/><circle cx="50" cy="30" r="4"/><circle cx="50" cy="70" r="4"/>
+                        <circle cx="80" cy="50" r="5" class="pulse-node"/>
+                    </svg>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tech-pill">NLP</span><span class="tech-pill">TF-IDF</span><span class="tech-pill">Streamlit</span>
+                    </div>
+                    <h3 class="project-title">Job Fraud Detection</h3>
+                    <p class="project-desc">NLP-powered system analyzing job descriptions to flag fraudulent postings in real-time.</p>
+                    <a href="https://github.com/meghaaa111/job-fraud-detection-ml" target="_blank" rel="noopener noreferrer" class="view-link">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card slide-left">
+                <div class="gold-line"></div>
+                <div class="project-visual art-nasa">
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                        <circle class="orbit" cx="50" cy="50" r="30"/>
+                        <circle class="orbit" cx="50" cy="50" r="15"/>
+                        <g><circle class="planet" cx="50" cy="20" r="3"/></g>
+                        <circle cx="50" cy="50" r="4" fill="var(--clr-warm-taupe)"/>
+                    </svg>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tech-pill">CNN</span><span class="tech-pill">LSTM</span><span class="tech-pill">Astronomy</span>
+                    </div>
+                    <h3 class="project-title">NASA Exoplanet</h3>
+                    <p class="project-desc">AI system detecting exoplanet transit signals from stellar light-curve data using ensemble deep learning.</p>
+                    <p class="project-metric">94.1<span>%</span></p>
+                    <a href="https://github.com/meghaaa111/Exoplanet-AI" target="_blank" rel="noopener noreferrer" class="view-link">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card slide-right">
+                <div class="gold-line"></div>
+                <div class="project-visual art-iris">
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(50,50)">
+                            <path d="M0,0 C-15,-20 15,-20 0,0" transform="rotate(0)"/>
+                            <path d="M0,0 C-15,-20 15,-20 0,0" transform="rotate(60)"/>
+                            <path d="M0,0 C-15,-20 15,-20 0,0" transform="rotate(120)"/>
+                            <path d="M0,0 C-15,-20 15,-20 0,0" transform="rotate(180)"/>
+                            <path d="M0,0 C-15,-20 15,-20 0,0" transform="rotate(240)"/>
+                            <path d="M0,0 C-15,-20 15,-20 0,0" transform="rotate(300)"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tech-pill">Decision Tree</span><span class="tech-pill">Scikit-Learn</span>
+                    </div>
+                    <h3 class="project-title">Iris Classification</h3>
+                    <p class="project-desc">ML web app for real-time iris species classification from physical measurements.</p>
+                    <a href="https://github.com/meghaaa111/Iris-Flower-Classification" target="_blank" rel="noopener noreferrer" class="view-link">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card slide-left">
+                <div class="gold-line"></div>
+                <div class="project-visual art-truthweave">
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(25, 25)">
+                            <circle cx="15" cy="15" r="10" fill="none" stroke="var(--clr-warm-taupe)" stroke-width="2" class="tw-glass"/>
+                            <line x1="22" y1="22" x2="40" y2="40" stroke="var(--clr-warm-taupe)" stroke-width="3" class="tw-handle"/>
+                            <circle cx="50" cy="5" r="2.5" class="tw-node"/>
+                            <circle cx="55" cy="20" r="2.5" class="tw-node"/>
+                            <circle cx="45" cy="35" r="2.5" class="tw-node"/>
+                            <path d="M50,5 L55,20 L45,35" fill="none" stroke="var(--clr-warm-taupe)" stroke-width="1" stroke-dasharray="3 3" class="tw-net"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tech-pill">React</span><span class="tech-pill">FastAPI</span><span class="tech-pill">Python</span><span class="tech-pill">Gemini API</span><span class="tech-pill">Chrome Ext</span>
+                    </div>
+                    <h3 class="project-title">TruthWeave</h3>
+                    <p class="project-desc">AI-powered fact-checking system verifying claims via real-time web data and trusted sources, complete with credibility filtering and a browser extension for instant verification.</p>
+                    <a href="https://github.com/meghaaa111/TruthWeave" target="_blank" rel="noopener noreferrer" class="view-link">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. SKILLS -->
+    <div class="diagonal-divider-top bg-light">
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section-title wipe"><span class="wipe-reveal-target"><span class="wipe-reveal-text">SKILLS</span></span></h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-cats anim-el">
+                        <div>
+                            <h4 class="skill-cat-title">Programming</h4>
+                            <div class="skill-pill-container">
+                                <span class="skill-pill tech-pill">Python</span><span class="skill-pill tech-pill">SQL</span>
+                                <span class="skill-pill tech-pill">C</span><span class="skill-pill tech-pill">Java</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="skill-cat-title">AI & Machine Learning</h4>
+                            <div class="skill-pill-container">
+                                <span class="skill-pill tech-pill">Machine Learning</span><span class="skill-pill tech-pill">Deep Learning</span><span class="skill-pill tech-pill">NLP</span>
+                                <span class="skill-pill tech-pill">Exploratory Data Analysis</span><span class="skill-pill tech-pill">Feature Engineering</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="skill-cat-title">Tools</h4>
+                            <div class="skill-pill-container">
+                                <span class="skill-pill tech-pill">SQL Server Management Studio</span><span class="skill-pill tech-pill">Jupyter Notebook</span>
+                                <span class="skill-pill tech-pill">VS Code</span><span class="skill-pill tech-pill">Tableau</span>
+                                <span class="skill-pill tech-pill">PowerBI</span><span class="skill-pill tech-pill">PyCharm</span><span class="skill-pill tech-pill">Excel</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="skill-cat-title">Version Control</h4>
+                            <div class="skill-pill-container">
+                                <span class="skill-pill tech-pill">Git</span><span class="skill-pill tech-pill">GitHub</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="skill-cat-title">Soft Skills</h4>
+                            <div class="skill-pill-container">
+                                <span class="skill-pill tech-pill">Problem Solving</span><span class="skill-pill tech-pill">Leadership</span>
+                                <span class="skill-pill tech-pill">Communication</span><span class="skill-pill tech-pill">Adaptability</span><span class="skill-pill tech-pill">Critical Thinking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-right-bars anim-el">
+                        <div class="bar-row">
+                            <span class="bar-label">Python</span>
+                            <div class="bar-track"><div class="bar-fill" data-width="95%"></div></div>
+                            <span class="bar-percent">95%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span class="bar-label">Machine Learning</span>
+                            <div class="bar-track"><div class="bar-fill" data-width="90%"></div></div>
+                            <span class="bar-percent">90%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span class="bar-label">Deep Learning</span>
+                            <div class="bar-track"><div class="bar-fill" data-width="85%"></div></div>
+                            <span class="bar-percent">85%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span class="bar-label">SQL</span>
+                            <div class="bar-track"><div class="bar-fill" data-width="88%"></div></div>
+                            <span class="bar-percent">88%</span>
+                        </div>
+                        <div class="languages">
+                            <span class="languages-label">languages :</span>
+                            english · tamil · telugu · french
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal Ticker -->
+            <div class="ticker-wrapper">
+                <div class="ticker-track" id="skills-ticker"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 6. EXPERIENCE -->
+    <section class="experience bg-dark" id="experience">
+        <div class="container">
+            <h2 class="section-title wipe"><span class="wipe-reveal-target"><span class="wipe-reveal-text">EXPERIENCE</span></span></h2>
+            <div class="exp-card anim-el">
+                <div class="exp-timeline-line"></div>
+                <div class="exp-timeline-dot"></div>
+                <h3 class="exp-title">Data Scientist Intern</h3>
+                <h4 class="exp-company">Intellipaat</h4>
+                <p class="exp-date">JULY 2025 — PRESENT</p>
+                <p class="exp-desc">Extensive focus on EDA, feature engineering, predictive modeling, and diverse classification tasks. Refining raw streams into optimized intelligence models deployed in high-stress environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. ACHIEVEMENTS -->
+    <section class="achievements bg-deep" id="achievements">
+        <div class="container">
+            <h2 class="section-title wipe"><span class="wipe-reveal-target"><span class="wipe-reveal-text">CERTS</span></span></h2>
+            
+            <div class="achieve-grid">
+                <div class="ach-left">
+                    <ul class="achieve-list">
+                        <li class="achieve-item">
+                            <span class="achieve-icon">✦</span>
+                            <span>Hackathon Winner — Codexia & CodeSprint</span>
+                        </li>
+                        <li class="achieve-item">
+                            <span class="achieve-icon">✦</span>
+                            <span>Department Topper — Three consecutive semesters</span>
+                        </li>
+                        <li class="achieve-item">
+                            <span class="achieve-icon">✦</span>
+                            <span>Competitive Programmer — 150+ problems</span>
+                        </li>
+                        <li class="achieve-item">
+                            <span class="achieve-icon">✦</span>
+                            <span>Technical Paper Presenter & Event Leader</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cert-grid anim-el">
+                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=A7DB7FDB6AE5CAB4B3FE079845480E30725352455E0081C30BBECF578A4C3557" target="_blank" rel="noopener noreferrer" class="cert-card"><h4 class="cert-title">Foundations Associate</h4><p class="cert-issuer">Oracle Certified</p></a>
+                    <a href="https://www.credly.com/earner/dashboard" target="_blank" rel="noopener noreferrer" class="cert-card"><h4 class="cert-title">Enterprise Design Thinking Co-Creator</h4><p class="cert-issuer">IBM</p></a>
+                    <a href="https://lms.intellipaat.com/certificate-link/?Yz1jdXMtNTUyNTAxNiZ1PTMzNjg1NSZleHQ9MQ" target="_blank" rel="noopener noreferrer" class="cert-card"><h4 class="cert-title">SQL Certification</h4><p class="cert-issuer">Intellipaat</p></a>
+                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_dzQKLsBRGMRgHJfhy_1757427296308_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-card"><h4 class="cert-title">Solutions Architecture Job Simulation</h4><p class="cert-issuer">AWS</p></a>
+                    <a href="https://www.life-global.org/certificate/46f07c40-4f09-48d0-a9c6-96b2803d0f3a" target="_blank" rel="noopener noreferrer" class="cert-card" style="grid-column: 1 / -1;"><h4 class="cert-title">Data Science & Analytics</h4><p class="cert-issuer">HP</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. STATS -->
+    <section class="stats" id="stats">
+        <div class="container stats-container anim-el">
+            <div class="stat-item">
+                <div class="stat-number-wrapper"><span class="sparkle-icon">✦</span><span class="stat-number count-up" data-val="9">0</span><span class="stat-suffix">.13</span></div>
+                <span class="stat-label">CGPA / AIML</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <div class="stat-number-wrapper"><span class="sparkle-icon">✦</span><span class="stat-number count-up" data-val="150">0</span><span class="stat-suffix">+</span></div>
+                <span class="stat-label">Problems Solved</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <div class="stat-number-wrapper"><span class="sparkle-icon">✦</span><span class="stat-number count-up" data-val="94">0</span><span class="stat-suffix">.1%</span></div>
+                <span class="stat-label">Model Accuracy</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <div class="stat-number-wrapper"><span class="sparkle-icon">✦</span><span class="stat-number count-up" data-val="4">0</span><span class="stat-suffix">+</span></div>
+                <span class="stat-label">Hackathons Won</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. CONTACT -->
+    <div class="diagonal-divider-top bg-dark">
+        <section class="contact" id="contact">
+            <div class="container anim-el">
+                <span class="contact-whisper">let's build something</span>
+                <h2 class="contact-title">GET IN TOUCH</h2>
+
+                <a href="mailto:meghasb2007@gmail.com" class="email-link">meghasb2007@gmail.com</a>
+
+                <div class="contact-socials">
+                    <a href="https://www.linkedin.com/in/megha-s-b-aiml/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+                    <span class="social-sep">/</span>
+                    <a href="https://github.com/meghaaa111" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+                    <span class="social-sep">/</span>
+                    <a href="https://leetcode.com/u/meghasb/" target="_blank" rel="noopener noreferrer" class="social-link">LeetCode</a>
+                </div>
+
+                <div class="contact-signature">Megha S B</div>
+                <div class="copyright">&copy; 2026. ARCHITECTED WITH ELEGANCE.</div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
